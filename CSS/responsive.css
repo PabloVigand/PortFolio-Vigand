@@ -206,13 +206,14 @@
 	}
 }
 @media screen and (max-width:400px){
+	.ContenedorPresentacion{
+		margin-top: 80px;
+	}
 	.linea{
         width: 340px;
 		
     }
-	.ContenedorPresentacion{
-		margin-top: 80px;
-	}
+	
 }
 			/* Tiene parte de *ACERCA DE MI* */
 @media screen and (max-width:339px){
@@ -263,7 +264,6 @@
 @media screen and (max-width:299px){
 	.ContenedorPresentacion{
 		width: 300px;
-		height: 190px;
 	}
 	#Bienvenido{
 		font-size: 30px;
@@ -408,6 +408,35 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* COMPARTIDO  */
 	
 	@media screen and (max-width:575px){
@@ -430,9 +459,7 @@
 		.FondoContenedor{
 			width: 400px;
 		}
-		.Titulos{
-			font-size: 40px;
-		}
+		
 	
 	}
 	@media screen and (max-width:370px){
@@ -441,12 +468,6 @@
 		}
 	}
 	@media screen and (max-width:339px){
-		.Titulos{
-			font-size: 40px;
-		}
-		.TextoContenido{
-			font-size: 15px;
-		}
 		.FondoContenedor{
 			width:350px ;
 		}
