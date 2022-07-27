@@ -1,0 +1,530 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*ELIMINA Logo Hamburguesa*/
+@media screen and (min-width:721px){
+	#btn-menu{
+		display: none;
+	}
+}
+/* BOTON HAMBURGUESA */ 
+@media screen and (max-width:825px){
+	#btn-menu{
+		float: right;
+		margin-top: 10px;
+		margin-right: 22px;
+		background: transparent;
+		padding: 10px;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: all 300ms;
+	}
+	#btn-menu:hover{
+		background: #16185362;	
+	}
+}
+@media screen and (min-width:720px){
+	#back_menu img{
+		display: none;
+	}
+}
+
+/* HEADER/NAV  APARECE LA BURGER*/
+@media screen and (max-width:720px){
+	
+	nav{
+		position: fixed;
+		top: 0;
+		left: -350px;
+		background: #42469c;
+		width: 350px;
+		height:200vh;
+		padding: 40px;
+		z-index: 1;
+		transition: all 500ms;
+		
+	}
+	nav img{
+		padding-left: 90px;
+	}
+	nav .BotoneraNav{
+		position:fixed;
+		flex-direction: column;
+		margin-right: 30px;
+		margin-top: 50px;
+	}
+	nav ul li {
+		margin-top: 80px;
+		margin-left: 50px;
+	}
+	nav ul li a{	
+		color: rgb(255, 255, 255);
+		font-size: 25px;
+		border: 3px solid transparent;
+		padding: 20px;
+		border-radius: 5%;
+	}
+    /* contenedor fuera del menu, para salir  */
+	#back_menu{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 200vh;
+		background: rgba(0, 0, 0, 0.87);
+		display: none;
+		z-index: 1;
+		
+	}
+	
+}
+@media screen and (max-width:420px){
+	nav img{
+		padding-left: 20px;
+	}
+	nav{
+		width: 240px;
+		transition: all 500ms;
+	}
+	nav ul li {
+		margin-top: 80px;
+		margin-left: 0px;
+	}
+	nav ul li a{	
+		padding: 0px;
+	}
+}
+
+/* PRESENTACION CON FRANSE */
+
+			/* Tiene parte de *ACERCA DE MI* */
+@media screen and (max-width:990px){
+    #Frontend{
+		width: 22em;
+	}
+	.linea{
+        width: 600px;
+    }
+	.FraseMotivadora p{
+		width: 600px;
+		
+	}
+	.FondoContenedor{
+		padding-bottom: 0px;	
+	}
+    .ContenedorRow {
+        display:contents;
+		text-align: center;
+		margin: 0px auto;
+    }
+	.ContenedorRow .col-md-6{
+		margin: 0px auto;
+		text-align: center;
+	}
+	#ImagenPersonal{
+		height: 300px;
+		width: 300px;
+		margin: 0px auto;
+		text-align: center;
+	}
+	.contenedor_INF-CV{
+		padding: 0px;
+	}
+}
+@media screen and (max-width:770px){
+    #Frontend{
+		width: 16em;
+	}
+	.linea{
+        width:500px;
+    }
+	.FraseMotivadora{
+		width: 500px;
+	}
+	.FraseMotivadora p{
+		width: 500px;
+		font-size: 18px;
+	}
+	
+}
+@media screen and (max-width:575px){
+	.ContenedorPresentacion{
+		width: 600px;
+	}
+    #Frontend{
+		width: 18em;
+	}
+}
+@media screen and (max-width:500px){
+	.ContenedorPresentacion{
+		width: 500px;
+	}
+	#pablo{
+		font-size: 50px;
+		letter-spacing:1px ;
+		
+	}
+	#Frontend{
+		width: 15em;
+	}
+	.linea{
+        width:450px;
+    }
+    .FraseMotivadora{
+		width: 400px;
+	}
+	.FraseMotivadora p{
+		width: 400px;
+		font-size: 18px;
+	}
+}
+@media screen and (max-width:419px){
+	.ContenedorPresentacion{
+		width: 400px;
+		height: 300px;
+		backdrop-filter: blur(20px);
+	}
+	#pablo{
+		font-size: 40px;
+	}
+	#Frontend{
+		width: 15em;
+		font-size: 25px;
+	}
+	.linea{
+        width:370px;
+    }
+
+    .FraseMotivadora{
+		width: 350px;
+	}
+	.FraseMotivadora p{
+		width: 350px;
+	}
+}
+@media screen and (max-width:400px){
+	.linea{
+        width: 340px;
+		
+    }
+	.ContenedorPresentacion{
+		margin-top: 80px;
+	}
+}
+			/* Tiene parte de *ACERCA DE MI* */
+@media screen and (max-width:339px){
+	
+	.ContenedorPresentacion{
+		width: 350px;
+		height: 190px;
+	}
+	#pablo{
+		font-size: 35px;
+		letter-spacing:1px ;
+	}
+	#Frontend{
+		margin-top: 15px;
+		width: 13em;
+		background: #EC255A;
+		border-radius: 2px;
+	}
+	.linea{
+        display: none;
+    }
+    .FraseMotivadora{
+		display: none;
+	}
+	#ImagenPersonal{
+		height: 200px;
+		width: 200px;
+		
+	}
+	.contenedor_INF-CV{
+		width: 340px;
+	}
+	#Presentacion{
+		padding-top: 200px;
+		padding-bottom:220px;
+		
+	}
+	.Titulos{
+		font-size: 40px;
+	}
+	.contenedor_INF-CV p{
+		font-size: 18px;
+		
+	}
+	
+}
+			/* Tiene parte de *ACERCA DE MI* */
+@media screen and (max-width:299px){
+	.ContenedorPresentacion{
+		width: 300px;
+		height: 190px;
+	}
+	#Bienvenido{
+		font-size: 30px;
+	}
+	#pablo{
+		font-size: 31px;
+	}
+	#Frontend{
+		width: 12.7em;
+		font-size: 22px;
+	}
+	.contenedor_INF-CV{
+		width: 300px;
+	}
+	.contenedor_INF-CV p{
+		font-size: 17px;
+		
+	}
+	#Presentacion{
+		padding-top: 200px;
+		padding-bottom:220px;
+		
+	}
+	.Titulos{
+		font-size: 40px;
+	}
+}
+
+
+/*ACERCADEMI FOTO - INFO- BOTON CURRICULUM */
+@media screen and (max-width:1399px){
+    #ImagenPersonal{
+        height:450px;
+		width: 450px;
+		margin-top: 20px;
+    }
+	.contenedor_INF-CV h1{
+		padding-top: 20px;
+		
+	}
+	.contenedor_INF-CV p{
+		padding-top: 15px;
+		
+	}
+	
+}
+@media screen and (max-width:1199px){
+    #ImagenPersonal{
+        height: 400px;
+		width: 400px;
+		padding-bottom: 15px;
+    }
+	.contenedor_INF-CV{
+		width: 550px;
+		
+	}
+	.contenedor_INF-CV h1{
+		padding-top: 25px;
+		
+	}
+	.TextoContenido{
+		font-size: 20px;
+		margin-bottom: 0px;
+	}
+}
+@media screen and (max-width:770px){
+    #ImagenPersonal{
+        height: 300px;
+		width: 300px;
+    }
+	.contenedor_INF-CV{
+		width: 440px;
+	}
+	#AcercaDeMi h1{
+		padding-top: 0px;
+	}
+	
+
+}
+@media screen and (max-width:420px){
+	#ImagenPersonal{
+		height: 250px;
+		width: 250px;
+		margin: 0px auto;
+		text-align: center;
+	}
+	.contenedor_INF-CV p{
+		padding-bottom: 10px;
+
+	}
+	#Presentacion{
+		padding-top: 200px;
+		padding-bottom:220px;
+		
+	}
+}
+@media screen and (max-width:380px){
+	
+	.contenedor_INF-CV h1{
+		padding-top: 0px;
+	}
+	.contenedor_INF-CV {
+		width: 400px;
+
+	}
+	.contenedor_INF-CV p{
+		font-size: 19px;
+		
+	}
+
+}
+@media screen and (max-width:370px){
+	#ImagenPersonal{
+        height: 200px;
+		width: 200px;
+    }
+	.contenedor_INF-CV {
+		width: 350px;
+	}
+	.contenedor_INF-CV p{
+		font-size: 17px;
+	}
+	#Presentacion{
+		padding-top: 200px;
+		padding-bottom:220px;
+		
+	}
+}
+@media screen and (max-width:299px){
+	
+	.contenedor_INF-CV {
+		width: 300px;
+	}
+	.contenedor_INF-CV p{
+		font-size: 16px;
+	}
+	#Presentacion{
+		padding-top: 200px;
+		padding-bottom:220px;
+		
+	}
+}
+
+
+/* COMPARTIDO  */
+	
+	@media screen and (max-width:575px){
+		.FondoContenedor{
+			width:580px ;
+		}
+	}
+	@media screen and (max-width:500px){
+		.FondoContenedor{
+			width:500px ;
+		}
+	
+	}
+	@media screen and (max-width:420px){
+		.FondoContenedor{
+			width:440px;		
+		}
+	}
+	@media screen and (max-width:380px){
+		.FondoContenedor{
+			width: 400px;
+		}
+		.Titulos{
+			font-size: 40px;
+		}
+	
+	}
+	@media screen and (max-width:370px){
+		.FondoContenedor{
+			width: 339px;
+		}
+	}
+	@media screen and (max-width:339px){
+		.Titulos{
+			font-size: 40px;
+		}
+		.TextoContenido{
+			font-size: 15px;
+		}
+		.FondoContenedor{
+			width:350px ;
+		}
+	}
+	@media screen and (max-width:299px){
+		.FondoContenedor{
+			width: 300px;
+		}
+	}
+	
+
+
+/* APTITUDES - SLIDER CON SKILL  */
+
+@media screen and (max-width:990px){
+	.slider{
+		width: 60vw;
+		padding-bottom: 50px;
+		padding-top: 20px;
+	}
+
+} 
+@media screen and (max-width:575px){
+    .slider{
+		width: 80vw;
+	}
+	.TextoContenido{
+		padding: 20px;
+		
+		
+	
+	}
+}
+
+
+
+/* FOOTER  */
+@media screen and (max-width:500px){
+	footer ul li{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+@media screen and (max-width:370px){
+	footer ul li{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	footer ul li p{
+		display: none;
+	}
+}
+@media screen and (max-width:299px){
+	footer ul li{
+		font-size: 40px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	footer ul li a i{
+		font-size: 40px;
+	}
+	footer ul li p{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

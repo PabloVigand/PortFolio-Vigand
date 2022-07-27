@@ -1,0 +1,492 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	/* background-image: url(Imagenes/alvaro-reyes-zvmZiw3vdsQ-unsplash.jpg) ; */
+	zoom: 80%;
+	background: #1b1d47;
+}
+/* HEADER/NAV  */
+nav{
+	z-index: 1000;
+	height: 70px;
+	position: fixed;
+    right: 0;
+    left: 0;
+    background: #161853c5;	
+}
+	nav ul{
+		display: flex;
+	}
+		nav ul li{
+			display: inline-block;
+			margin-right: 30px;
+			margin-left: 20px;
+			
+		}
+		nav ul li:hover{
+			transform: scale(1.09);
+			transition: all 500ms;
+		}
+			nav ul li a{
+				color: #afafaf;
+				text-decoration: none;
+				font-size: 21px;
+			}
+			nav ul li a:hover{
+				color: #ffffff;	
+			}
+/* LOGO EN NAV  */
+#LogoNav{
+	float: left;
+	margin-left: 50px;
+	padding-top: 10px;
+}
+/* LOGO EN HEADER  */
+#LogoNav2{
+	float: left;
+	margin-left: 50px;
+	padding-top: 10px;
+}
+/* LISTA <ul>  */
+.BotoneraNav{
+	float: right;
+	margin-right: 50px;
+	padding-top: 20px;
+}
+
+
+
+
+
+/* PRESENTACION  */
+#Presentacion{
+	padding-top: 400px;
+	padding-bottom:420px;
+	text-align: center;
+	background-image: url(../Imagenes/alvaro-reyes-KxVlKiqQObU-unsplash.jpg);
+	object-fit: cover;
+	
+}
+	.ContenedorPresentacion{
+		margin-top: 100px;
+		height:340px;
+		width: 800px;
+		backdrop-filter: blur(10px);
+		background: #161853a9;	
+		border-radius: 12px;
+		margin: 0px auto;
+		text-align: center;
+	}
+		#Bienvenido{
+			padding-top: 25px;
+			font-size: 32px;
+			letter-spacing:2px ;
+		}
+		#pablo{
+			font-size: 60px;
+			letter-spacing:1px ;
+			
+		}
+		/* #pablo::first-letter{
+			color: #ec255a;
+			font-size: 70px;
+		} */
+		#Frontend{
+			font-size: 32px;
+			letter-spacing:2px;
+			margin-bottom: 20px;
+			background: #ec255af2;
+			border-radius: 2px;
+			white-space: nowrap;
+			overflow: hidden;
+			width: 24.3em;				
+			animation:anim 3s;
+		}
+			@keyframes anim{
+				from {width: 0;}
+			}
+		.linea{
+			margin: 0px auto;
+			height: 0.5px;
+			width: 700px;
+			background: rgba(214, 214, 214, 0.47);
+		}
+		.FraseMotivadora{
+			margin: 0px auto;
+			width: 700px;
+			margin-top: 20px;
+			text-align: center;
+		}
+			.FraseMotivadora p{
+				width: 700px;
+				color: rgba(194, 194, 194, 0.686);
+				font-size:22px;
+				letter-spacing: 2px;
+				margin: 0px auto;
+			}
+
+
+
+/*ACERCADEMI FOTO - INFO- BOTON CURRICULUM */
+#AcercaDeMi{
+	padding-top: 90px;
+	width: 100%;
+		
+}
+	.ContenedorRow{
+		display: flex;
+		margin: 0px auto;
+			text-align: center;
+	}
+		#ImagenPersonal{
+			height: 500px;
+			width: 500px;
+			margin: 0px auto;
+			text-align: center;
+		}
+			#ImagenPersonal img{
+				height: 100%;
+				width: 100%;
+				border-radius: 12px;
+				margin-left: 50px;
+				
+				margin: 0px auto;
+				object-fit: cover;
+			}
+		.contenedor_INF-CV{
+			padding-right: 100px;
+			text-align: center;
+			height: 400px;	
+		}	
+			.contenedor_INF-CV h1{
+				padding-top: 40px;
+				margin: 0px auto;
+				text-align: center;
+			}	
+			.contenedor_INF-CV p{
+				padding-top: 30px;
+				padding-bottom: 10px;
+			}
+		.BottonCV{
+			font-size: 25px;
+			border-radius: 50px;
+			background-color: #fcfcfc;
+			color: rgb(0, 0, 0);
+			padding: 15px 30px 20px 30px;
+			text-decoration: none;
+			box-shadow: 0px 1px 5px #00000052;
+		}		
+		.BottonCV:hover{
+			transition: all 1000ms;
+			background-color: #e945607a;
+			color: black;
+		}
+
+
+
+/* APTITUDES - SLIDER CON SKILL  */
+#Aptitudes{
+	padding-top: 75px;
+}
+.slider{
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+}
+	.slider .slider-pista{
+		display: flex;
+		animation: scroll 20s linear infinite;
+		-webkit-animation: scroll  20s alternate infinite linear ;
+		width: calc(260px * 21);
+		
+
+	}
+		.slider .slide{
+			width: 64px;
+			margin-left: 20px;
+			margin-right: 20px;
+
+		}
+			.slider .slide img{
+				width: 100%;
+				text-align: center;
+			}
+			.slider .slide p{
+				margin-top: 10px;
+				text-align: center;
+				font-weight: 700;
+				font-size: 14px;
+				
+
+			}
+			@keyframes scroll {
+				0%{
+					-webkit-transform:translateX(0);
+					transform: translate(0);
+				}
+				100% {
+					-webkit-transform:translateX(calc(-64px * 14));
+					transform: translate(calc(-64px * 14));
+				}
+			}
+
+
+
+
+
+			/* CLASES COMPARTIDAS  */
+			.centrado{
+			text-align: center;
+			}
+			.espacios{
+			padding-top: 100px;
+			padding-bottom: 100px;
+			}
+			.espacios2{
+			padding-top: 50px;
+			padding-bottom: 50px;
+			}
+			.Titulos{
+			font-size: 45px;
+			font-weight: 700;
+			text-align: center;
+			}
+			.TextoContenido{
+			padding-top: 25px;
+			padding-bottom: 25px;
+			font-size: 25px;
+			font-weight: 500;
+			text-align: center;
+			}
+			
+			.FondoContenedor{
+				background: #FAEDF0;
+				/* background: rgba(255, 255, 255, 0.1); */
+				box-shadow: 20px 20px 50px rgba(0,0,0, 0.5);
+				border-radius: 10px;
+				padding-bottom: 50px;
+				padding-top: 50px;
+				text-align: center;
+				margin: 0px auto;
+			}
+			.TipoLetra{  
+				font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+			}
+			.LetrasClaras{
+				color: rgb(255, 255, 255);
+			}
+			.LetrasOscuras{
+				color: #040203a9;
+			
+			}
+
+
+
+/* PROYECTOS */
+#PortFolio{
+	padding-top:90px;
+	padding-bottom: 100px;
+}
+#PortFolio h1{
+	padding-bottom: 75px;
+	margin-bottom: 0px;
+}
+			.contenidoCards{
+				height: 500px;
+				width: 100%;
+				margin:0px auto;
+				overflow-x:auto;
+				
+			}
+			.contenidoCards::-webkit-scrollbar{
+				border-radius: 2px;
+				height: 10px;
+			}		
+			.contenidoCards::-webkit-scrollbar-thumb{
+				background:#ec255a;
+				border-radius: 2px;
+
+			}
+				.Card__parent{
+					margin: 0px auto;
+					width: 200px;
+					text-align: center;
+					display: flex;
+					margin-left: 30px ;
+					position: relative;  /* el position relative le permite a las card no desordenarse, y que el width:100% de las card tenga sentido*/
+				}
+					.card{
+						height: 400px;
+						min-width:300px;
+						margin: 0px auto;
+						border-radius: 5px;
+						background: #e8e8e885;
+						box-shadow: 0px 10px 10px #8b8b8ba1;
+						margin-left: 30px;
+						
+					}
+						.card img{
+									margin:0px auto;
+									height: 50%;
+									width: 70%;
+									top: 25%;
+									position: relative;
+									border-radius: 5px;
+								}
+								
+.Card__parent .card .capa{
+	position: absolute;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: rgba(54, 56, 56, 0.7);
+	transition: all 500ms ease-out;
+	opacity: 0;
+	visibility: hidden;
+	text-align: center;
+	border-radius: 5px;
+}
+	.card:hover > .capa{
+			opacity: 1;
+			visibility: visible;
+		}
+	.Card__parent .card:hover > img{
+		transform: scale(1.1);
+		transition: all 500ms ease-out;
+	}
+.Card__parent .card .capa h2{
+	font-weight: 400;
+	transition: all 500ms ease-out;
+}
+	.Card__parent .card:hover > .capa h2{
+			margin-top: 40px;
+			
+		}
+.Card__parent .card .capa p{
+	font-size: 15px;
+	line-height: 1.5;
+	width: 100% ;
+	max-width: 220px;
+	margin: auto;
+}
+.Card__parent .card .capa ul{
+	margin: 0px auto;
+	padding-left: 0px;
+	text-align: center;
+}
+	.Card__parent .card .capa ul li{
+		list-style: none;
+		border: 1px solid white;
+		width: 250px;
+		height: 40px;
+		padding-top: 7px;
+		text-align: center;
+		margin: 0px auto;
+		border-radius: 5px;
+	}
+		.Card__parent .card .capa ul li a{
+			text-align: center;
+			text-decoration: none;
+		}
+.BottonImagenes:hover{
+	background: #e945607a;
+	
+}
+	.BottonImagenes a:hover{
+		color: white;
+	}
+
+
+/* CONTACTOS  */
+
+.Contacto{
+	margin-bottom: 75px;
+}
+footer{
+	background:#ec255a;
+}
+footer ul{
+	justify-content: center;
+	display: flex;
+	padding-left: 0px;
+	margin: 0px;
+}
+footer ul li{
+	list-style: none;
+	min-width: 80px;
+	margin: 0px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+footer ul li a{
+	line-height: 130px;
+	border-radius: 15%;
+}
+footer ul li a i{
+	font-size: 50px;
+}
+footer ul li i:hover{
+	transform:scale(1.1);
+	transition:all 500ms  ;
+}
+:root{
+	/* --whatsapp: #008069;
+	--instagram: #e4405f;
+	--github: rgb(80, 80, 80);
+	--discord: #404eed;
+	--linkedin: #0a66c2; */
+	--blanco: white;
+}
+
+footer ul li .github:hover{
+	color: var(--blanco);
+}
+footer ul li .whatsapp:hover{
+	color: var(--blanco);
+}
+footer ul li .instagram:hover{
+	color: var(--blanco);
+}
+footer ul li .discord:hover{
+	color: var(--blanco);
+}
+footer ul li .linkedin:hover{
+	color: var(--blanco);
+}
+.copy{
+	text-align: center;
+	background: #141416;
+	color: gray;
+	padding-bottom: 5px;
+	padding-top: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
