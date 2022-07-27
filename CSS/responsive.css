@@ -448,7 +448,6 @@
 		.FondoContenedor{
 			width:500px ;
 		}
-	
 	}
 	@media screen and (max-width:420px){
 		.FondoContenedor{
@@ -459,8 +458,6 @@
 		.FondoContenedor{
 			width: 400px;
 		}
-		
-	
 	}
 	@media screen and (max-width:370px){
 		.FondoContenedor{
